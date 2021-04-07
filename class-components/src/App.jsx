@@ -10,8 +10,9 @@ class App extends Component {
   }
   render() {
     const {name} = this.props;
+    const {number}=this.props;
     return (
-      <h1>Class Componentt {name}</h1>
+      <h1>Class Componentt {name} {number}</h1>
     );
   }
 }

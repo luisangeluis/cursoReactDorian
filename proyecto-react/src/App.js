@@ -9,11 +9,8 @@ import Person from './components/Person';
 function App() {
   return(
     <>
-      <Header></Header>
-      <Person nombre='luis' edad={30}></Person>
-      <Person nombre='angel' edad={29}></Person>
-      <Person nombre='zepeda' edad={28}></Person>
-
+    <h1>hello world</h1>
+    <h1>hello world</h1>
 
     </>
   )
