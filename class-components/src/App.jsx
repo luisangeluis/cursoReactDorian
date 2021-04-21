@@ -19,13 +19,13 @@ class App extends Component {
 */
 class App extends Component {
   //Inicializar el state con constructor
-  /*
+  
   constructor(props) {
     super(props);
-    this.state = { number: 5 };
-    console.log(this.state);
+    //this.state = { number: 5 };
+    //console.log(this.state);
   }
-  */
+  
   //iniciar state fuera de los metodos
   state={
     number: 5
@@ -37,6 +37,7 @@ class App extends Component {
     return (
       <h1>Class component {number} {name}</h1>
     );
+
   }
 }
 
