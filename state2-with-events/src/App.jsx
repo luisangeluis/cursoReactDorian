@@ -8,44 +8,51 @@ class App extends Component {
   //   this.state = {  };
   // }
 
-  state={
-    number:5
+  state = {
+    number: 5
+  }
+  handleMostrarState = () => {
+    console.log(this.state);
+
   }
 
-  handleClick=()=>{
+  handleClick = () => {
     console.log('hola');
 
     //NUNCA HACER ESTO
     // this.state.number++;
     this.setState({
       number: this.state.number + 1
-    })
 
+    })
+    // console.log(this.state);
+    this.handleMostrarState();
   }
 
-  handleDecrementarState =()=>{
-    
+
+  handleDecrementarState = () => {
+
     this.setState({
-      number: this.state.number-1
+      number: this.state.number - 1
     })
   }
 
-  handleResetState=()=>{
-    
+  handleResetState = () => {
+
     this.setState({
-      number: this.state.number =0
+      // number: this.state.number =0
     })
   }
 
   render() {
-    const {number} = this.props;
+    const { number } = this.props;
 
     return (
       <>
-      <h1>hola {number} {this.state.number}</h1>
-      <button onClick={this.handleClick}>incremento</button>
-      <button onClick={this.handleDecrementarState}>Decremento</button>
-      <button onClick={this.handleResetState}>Resetear</button>
+        <h1>hola {number} {this.state.number}</h1>
+        <button onClick={this.handleClick}>incremento</button>
+        <button onClick={this.handleDecrementarState}>Decremento</button>
+        <button onClick={this.handleResetState}>Resetear</button>
       </>
     );
   }
