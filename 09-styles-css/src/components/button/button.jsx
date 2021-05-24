@@ -1,27 +1,46 @@
 import React, { Component, createRef } from 'react'
 import './button.css'
 
-class button extends Component {
-    state = {  }
+import styled from 'styled-components'
 
-    constructor(){
-        super()
-        this.saludo = createRef();
+const StyledButton = styled.button`
+    background-color: red;
+    color:white;
+`
 
-    }
-    handleAlert=()=>{
-        console.log(this.saludo.current.textContent);
-        // alert('hola');
-    }
+// class button extends Component {
+//     state = {  }
 
-    render() {
-        return (
-            <>
-                <h1 ref={this.saludo}>hola</h1>
-                <button onClick={this.handleAlert} className='button'> click</button>
-            </>
-        );
-    }
+//     constructor(){
+//         super()
+//         this.saludo = createRef();
+//         this.saludo2 = createRef();
+//         this.input = createRef();
+
+
+
+//     }
+//     handleAlert=()=>{
+//         console.log(this.input.current.value);
+//         // alert('hola');
+//     }
+
+//     render() {
+//         return (
+//             <>
+//                 <h1 ref={this.saludo}>angel</h1>
+//                 <p ref={this.saludo2}>holass</p>
+//                 <input type="text"  ref={this.input}/>
+//                 {/* <button onClick={this.handleAlert} className='button'> click</button> */}
+//             </>
+//         );
+//     }
+// }
+
+const button = () => {
+    return (
+        <StyledButton>click</StyledButton>
+    )
 }
 
 export default button;
