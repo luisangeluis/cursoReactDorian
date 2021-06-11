@@ -6,7 +6,7 @@ import EjemploHook from './components/hook'
 function App() {
   return (
     <div className="App">
-      
+
       {/* <Button></Button> */}
       <EjemploHook></EjemploHook>
       <h1>hola</h1>

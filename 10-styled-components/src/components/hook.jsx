@@ -2,7 +2,7 @@ import React, { Component,useState } from 'react'
 
 const EjemploHook = ()=>{
 
-    //useState devueve un array con 2 posiciones el nombre del cual state es y setState() o metodo para fijar el estado...
+    //useState devuelve un array con 2 posiciones el nombre del cual state es y setState() o metodo para fijar el estado...
     // a este metodo le pones set+nombre del state
     const [number,setNumber] = useState(10);
 
